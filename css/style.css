@@ -1,72 +1,54 @@
-@import "compass";
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Abel);
-// font-family
-$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-
-// colors
-$baseColor: #fdfcf6;
-$subColor: #bea300;
-$keyColor: #14c0c9;
-$fontColor: #4c4c4c;
-
-
 /* Base
 ------------------------------------------------------------*/
-html{ font-size: 62.5%; }
+html {
+  font-size: 62.5%; }
 
-body{
-  color: $fontColor;
+body {
+  color: #4c4c4c;
   font-size: 1.4rem;
-  font-family:$baseFontFamily;
-  line-height:1.6;
-  letter-spacing: 0.1em; 
-  background-color: $baseColor;
-}
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
 
 a {
-  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
-  text-decoration: none;
-}
+  color: #14c0c9;
+  text-decoration: none; }
+  a:visited {
+    color: #0f949b; }
+  a:hover {
+    color: #0f949b; }
+  a:active {
+    color: #16d6e0; }
 
 /* Align
 ------------------------------------------------------------*/
 .text-center {
-  text-align: center;
-}
+  text-align: center; }
 
 /* Layout
 ------------------------------------------------------------*/
-.block-center {
+.block-center, section .container, #skills i {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /* Font
 ------------------------------------------------------------*/
-.abel {
-  font-family: 'Abel', sans-serif;
-}
-.uppercase {
-  text-transform: uppercase;
-}
+.abel, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+  font-family: 'Abel', sans-serif; }
 
-// desktop
-@media (min-width: 1025px) {
-
-  /* Base
-  ------------------------------------------------------------*/
+.uppercase, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+  text-transform: uppercase; }
   
-}
 
-header {
-  .image-photo {
+ .golf-image {
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
     padding: 60px 0;
     clear: both;
-   }
+  }
     
-}
   
