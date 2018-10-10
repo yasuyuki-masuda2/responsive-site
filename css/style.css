@@ -13,16 +13,6 @@ body {
   letter-spacing: 0.1em;
   background-color: #fdfcf6; }
 
-a {
-  color: #14c0c9;
-  text-decoration: none; }
-  a:visited {
-    color: #0f949b; }
-  a:hover {
-    color: #0f949b; }
-  a:active {
-    color: #16d6e0; }
-
 /* Align
 ------------------------------------------------------------*/
 .text-center {
@@ -30,25 +20,70 @@ a {
 
 /* Layout
 ------------------------------------------------------------*/
-.block-center, section .container, #skills i {
+.block-center {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
 /* Font
 ------------------------------------------------------------*/
-.abel, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+.abel, #ozaki h3 {
   font-family: 'Abel', sans-serif; }
 
-.uppercase, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+.uppercase, #ozaki h3 {
   text-transform: uppercase; }
-  
 
- .golf-image {
-    width: 100%;
-    margin: 0 auto;
-    padding: 60px 0;
-    clear: both;
-  }
-    
-  
+@media (min-width: 769px) {
+  /* Base
+  ------------------------------------------------------------*/
+  a:hover {
+    text-decoration: underline; } }
+.golf-image {
+  background-image: url(../images/golf.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+@media (max-width: 768px) {
+  .golf-image {
+    height: 250px; } }
+#ozaki {
+  background-color: #bea300; }
+  #ozaki .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    flex-direction: row; }
+  #ozaki .ozaki-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 10px;
+    padding: 20px;
+    background-color: #fdfcf6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #ozaki h2 {
+    color: #fdfcf6;
+    margin-bottom: 10px;
+    font-size: 4rem;
+    font-weight: bold; }
+  #ozaki h3 {
+    color: #14c0c9;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
+  @media (max-width: 768px) {
+    #ozaki .container {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      justify-content: space-between; }
+    #ozaki .ozaki-box {
+      margin: 10px 0; } }
+
+/*# sourceMappingURL=style.css.map */
