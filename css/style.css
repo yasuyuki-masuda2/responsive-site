@@ -49,7 +49,7 @@ body {
   .golf-image {
     height: 250px; } }
 #ozaki {
-  background-color: #bea300; }
+  background-color: #061283; }
   #ozaki .container {
     display: -webkit-flex;
     display: flex;
@@ -85,5 +85,34 @@ body {
       justify-content: space-between; }
     #ozaki .ozaki-box {
       margin: 10px 0; } }
+
+#contact ul {
+  text-align: center;
+  margin-top: 5px; }
+  #contact ul li {
+    display: inline-block;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-right: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top; }
+    #contact ul li:last-child {
+      margin-right: 0; }
+  #contact ul a {
+    display: block;
+    width: 300px;
+    height: 50px;
+    color: #FFF;
+    background-color: #14c0c9;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+#contact h2 {
+  color: #061283;
+  margin-bottom: 5px;
+  font-size: 4rem;
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

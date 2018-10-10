@@ -5,7 +5,7 @@ $baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino 
 
 // colors
 $baseColor: #fdfcf6;
-$subColor: #bea300;
+$subColor: #061283;
 $keyColor: #14c0c9;
 $fontColor: #4c4c4c;
 
@@ -112,5 +112,36 @@ body{
     .ozaki-box {
       margin: 10px 0;                   // 上下にマージン
     }
+  }
+}
+#contact {
+  ul {
+    text-align: center;
+    margin-top: 5px;
+    li {
+      display: inline-block;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-right: 20px;
+      @include box-sizing(border-box);
+      vertical-align: top;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      display: block;
+      width: 300px;
+      height: 50px;
+      color: #FFF;
+      background-color: $keyColor;
+      @include border-radius(4px);
+    }
+  }
+    h2 {
+    color: $subColor;
+    margin-bottom: 5px;
+        font-size: 4rem;
+    font-weight: bold;
   }
 }
